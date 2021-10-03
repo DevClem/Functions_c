@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+Call_by_Reference(int *p, int *q)
+{
+    (*p)++;
+    (*q)++;
+    printf("Inside function p = %d q = %d\n", *p, *q);
+}
+int main()
+{
+    int a = 2, b = 3;
+    printf("Before Calling function, a = %d b = % d\n", a, b);
+    Call_by_Reference(a, b);
+    printf("After Calling function, a = %d b = %d\n", a, b);
+    return 0;
+}
