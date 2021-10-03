@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+Call_by_Value(int x, int y)
+{
+    x;
+    y;
+    printf("Inside funciton x = %d y = %d\n", x, y);
+}
+int main()
+{
+    int a = 4, b = 5;
+    printf("Before Calling function, a = %d b = % d\n", a, b);
+    Call_by_Value(a, b);
+    printf("After Calling function, a = %d b = %d\n", a, b);
+    return 0;  
+}
